@@ -51,5 +51,6 @@ jobs:
             - No escribas la mención "@claude" en ningún comentario.
             - No modifiques archivos del repositorio.
             - Distingue lo verificado en el código de lo que es suposición.
+            - El comentario debe estar en formato Markdown compatible con GitHub (GFM): encabezados con `##`, listas con `-`, código en línea con comillas invertidas y bloques de código con triple comilla invertida indicando el lenguaje (por ejemplo ```js). Referencia archivos y funciones como `game.js` o `lockPiece()`. No uses HTML, salvo el comentario inicial `<!-- claude-triage -->`.
           claude_args: >-
             --allowedTools "Read,Grep,Glob,Bash(gh issue view:*),Bash(gh issue edit:*),Bash(gh issue comment:*),Bash(gh label list:*),Bash(gh api:*)"
